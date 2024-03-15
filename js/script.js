@@ -1,3 +1,5 @@
+'use strict';
+
 // TODO: Recursion
 // function pow(x, n) {
 //     if (n === 1) {
@@ -129,3 +131,45 @@
 // }
 
 // console.log(factorial(5));
+
+// TODO: Работа с мобильными устройствами
+// window.addEventListener('DOMContentLoaded', () => {
+//     const box = document.querySelector('.box');
+
+//     box.addEventListener('touchstart', (e) => {
+//         e.preventDefault();
+
+//         console.log('start');
+//         console.log(e.targetTouches);
+//     });
+
+//     box.addEventListener('touchmove', (e) => {
+//         e.preventDefault();
+
+//         console.log(e.targetTouches[0].pageX);
+//     });
+
+//     box.addEventListener('touchend', (e) => {
+//         e.preventDefault();
+
+//         console.log('end');
+//     });
+// });
+
+// touches
+// targetTouches
+// changedTouches
+
+// TODO: defer, async, добавление script через другой js файл
+// const p = document.querySelectorAll('p');
+// console.log(p);
+
+// function loadScript(src) {
+//     const script = document.createElement('script');
+//     script.src = src;
+//     script.async = false;
+//     document.body.append(script);
+// }
+
+// loadScript('js/test.js');
+// loadScript('js/some.js');
