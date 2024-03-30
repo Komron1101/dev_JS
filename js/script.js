@@ -173,3 +173,77 @@
 
 // loadScript('js/test.js');
 // loadScript('js/some.js');
+
+// TODO: Сложная задача на вычисление количества страниц
+
+// TODO: 1 - вариант
+/*
+function amountOfPages(summary) {
+    let check = 0;
+    let numbers = [];
+    let strNumbers = '';
+
+    for (let num = 0; num < summary; num++) {
+        check += 1;
+        numbers[num] = num + 1;
+        for (let numToStr = 0; numToStr < numbers.length; numToStr++) {
+            strNumbers += numbers[numToStr];
+        }
+
+        if (strNumbers.length >= summary) break;
+        strNumbers = '';
+    }
+
+    return check;
+}
+
+console.log(amountOfPages(25)); // 17
+*/
+
+// TODO: 2 - вариант
+/*
+function amountOfPages(summary) {
+    let numbers = [];
+    let strNumbers = '';
+
+    for (let num = 0; num < summary; num++) {
+        numbers[num] = num + 1;
+        strNumbers += numbers[num];
+
+        if (strNumbers.length == summary) return num + 1;
+    }
+}
+console.log(amountOfPages(25)); // 17
+*/
+
+// TODO: 3 - вариант
+/*
+function amountOfPages(summary) {
+    let strNumbers = '';
+
+    for (let num = 1; num <= summary; num++) {
+        strNumbers += num;
+
+        if (strNumbers.length === summary) return num;
+    }
+}
+
+console.log(amountOfPages(25));
+*/
+
+// TODO: 4 - вариант из сайта
+function amountOfPages(summary) {
+    let result = '';
+    let n = 0;
+
+    for (let i = 1; i <= summary; i++) {
+        result += i;
+        if (result.length === summary) {
+            n = i;
+            break;
+        }
+    }
+
+    return n;
+}
+console.log(amountOfPages(25));
