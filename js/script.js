@@ -232,18 +232,91 @@ console.log(amountOfPages(25));
 */
 
 // TODO: 4 - вариант из сайта
-function amountOfPages(summary) {
-    let result = '';
-    let n = 0;
+// function amountOfPages(summary) {
+//     let result = '';
+//     let n = 0;
 
-    for (let i = 1; i <= summary; i++) {
-        result += i;
-        if (result.length === summary) {
-            n = i;
-            break;
-        }
-    }
+//     for (let i = 1; i <= summary; i++) {
+//         result += i;
+//         if (result.length === summary) {
+//             n = i;
+//             break;
+//         }
+//     }
 
-    return n;
-}
-console.log(amountOfPages(25));
+//     return n;
+// }
+// console.log(amountOfPages(25));
+
+// TODO: isPangram
+// let string = 'The quick brown fox jumps over the lazy dog';
+
+// TODO: isPangram #1
+// function isPangram(string) {
+//     let newStr = string.toLowerCase();
+//     let arrLetter = [];
+
+//     for (let letter of newStr) {
+//         let found = false;
+//         for (let letterInArr of arrLetter) {
+//             if (letterInArr === letter) {
+//                 found = true;
+//                 break;
+//             }
+//         }
+
+//         if (!found && letter != ' ') arrLetter.push(letter);
+//     }
+//     return arrLetter.length === 26;
+// }
+// console.log(isPangram(string));
+
+// TODO: isPangram #2
+// function isPangram(string) {
+//     let newStr = string.toLowerCase();
+//     let arrLetter = [];
+
+//     for (let letter of newStr) {
+//         if (!arrLetter.includes(letter) && letter != ' ')
+//             arrLetter.push(letter);
+//     }
+//     return arrLetter.length === 26;
+// }
+// console.log(isPangram(string));
+
+// TODO: isPangram #3
+// function isPangram(string) {
+//     string = string.toLowerCase();
+//     string = new Set(string);
+//     let newArray = [];
+//     string.forEach((element) => {
+//         if (element >= 'a') newArray.push(element);
+//     });
+//     newArray.sort();
+//     return newArray.length === 26;
+// }
+// console.log(isPangram(string));
+
+// TODO: deepCount(array)
+// function deepCount(array) {
+//     let count = array.length;
+//     for (let number = 0; number < array.length; number++) {
+//         if (Array.isArray(array[number])) count += deepCount(array[number]);
+//     }
+//     return count;
+// }
+
+// let array = [1, 2, [3, 4, [5]]];
+// console.log(deepCount(array));
+
+// TODO: deepCount(array)
+// function deepCount2(arr) {
+//     let count = 0;
+//     arr.forEach((element) => {
+//         count++;
+//         if (Array.isArray(element)) count += deepCount(element);
+//     });
+//     return count;
+// }
+// console.log(deepCount2(array));
+ 
